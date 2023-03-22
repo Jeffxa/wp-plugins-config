@@ -1,0 +1,438 @@
+OPTIMAL CONFIG SECURITY HEADERS
+TO DO: Convert to sql file
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_method', 'htaccess', 'yes')
+ON DUPLICATE KEY UPDATE option_value = 'htaccess', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_htaccess_path', '/home/dkdfckim/coloradoremodeling.net/.htaccess', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '/home/dkdfckim/coloradoremodeling.net/.htaccess', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_user_ini_path', '/home/dkdfckim/coloradoremodeling.net/.user.ini', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '/home/dkdfckim/coloradoremodeling.net/.user.ini', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_htpasswd_path', '/home/dkdfckim/coloradoremodeling.net/.hh-htpasswd', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '/home/dkdfckim/coloradoremodeling.net/.hh-htpasswd', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_htdigest_path', '/home/dkdfckim/coloradoremodeling.net/.hh-htdigest', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '/home/dkdfckim/coloradoremodeling.net/.hh-htdigest', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_x_frame_options', '1', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '1', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_x_frame_options_value', 'deny', 'yes')
+ON DUPLICATE KEY UPDATE option_value = 'deny', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_x_frame_options_domain', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_x_xxs_protection', '1', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '1', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_x_xxs_protection_value', '1; mode=block', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '1; mode=block', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_x_xxs_protection_uri', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_x_content_type_options', '1', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '1', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_x_content_type_options_value', 'nosniff', 'yes')
+ON DUPLICATE KEY UPDATE option_value = 'nosniff', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_strict_transport_security', '1', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '1', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_strict_transport_security_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_strict_transport_security_max_age', '31536000', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '31536000', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_strict_transport_security_sub_domains', '1', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '1', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_strict_transport_security_preload', '1', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '1', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_public_key_pins', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_public_key_pins_sha256_1', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_public_key_pins_sha256_2', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_public_key_pins_max_age', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_public_key_pins_sub_domains', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_public_key_pins_report_uri', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_public_key_pins_report_only', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_x_ua_compatible', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_x_ua_compatible_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_p3p', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_p3p_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_referrer_policy', '1', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '1', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_referrer_policy_value', 'no-referrer-when-downgrade', 'yes')
+ON DUPLICATE KEY UPDATE option_value = 'no-referrer-when-downgrade', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_content_security_policy', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_content_security_policy_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_content_security_policy_report_only', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_access_control_allow_origin', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_access_control_allow_origin_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_access_control_allow_origin_url', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_access_control_allow_credentials', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_access_control_allow_credentials_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_access_control_allow_methods', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_access_control_allow_methods_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_access_control_allow_headers', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_access_control_allow_headers_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_access_control_allow_headers_custom', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_access_control_expose_headers', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_access_control_expose_headers_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_access_control_expose_headers_custom', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_access_control_max_age', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_access_control_max_age_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_content_encoding', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_content_encoding_module', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_content_encoding_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_content_encoding_ext', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_vary', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_vary_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_x_powered_by', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_x_powered_by_option', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_x_powered_by_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_www_authenticate', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_www_authenticate_type', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_www_authenticate_realm', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_www_authenticate_user', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_www_authenticate_pswd', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_cache_control', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_cache_control_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_age', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_age_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_pragma', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_pragma_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_expires', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_expires_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_expires_type', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_connection', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_connection_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_cookie_security', '1', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '1', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_cookie_security_value', 'a:1:{s:6:"Secure";s:1:"1";}', 'yes')
+ON DUPLICATE KEY UPDATE option_value = 'a:1:{s:6:"Secure";s:1:"1";}', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_expect_ct', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_expect_ct_max_age', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_expect_ct_report_uri', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_expect_ct_enforce', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_timing_allow_origin', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_timing_allow_origin_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_timing_allow_origin_url', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_x_permitted_cross_domain_policies', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_x_permitted_cross_domain_policies_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_x_download_options', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_x_download_options_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_x_dns_prefetch_control', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_x_dns_prefetch_control_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_custom_headers', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_custom_headers_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_report_to', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_report_to_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_feature_policy', '1', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '1', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_feature_policy_feature', 'a:2:{s:13:"accelerometer";s:1:"1";s:8:"autoplay";s:1:"1";}', 'yes')
+ON DUPLICATE KEY UPDATE option_value = 'a:2:{s:13:"accelerometer";s:1:"1";s:8:"autoplay";s:1:"1";}', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_feature_policy_origin', 'a:24:{s:13:"accelerometer";s:0:"";s:20:"ambient-light-sensor";s:0:"";s:8:"autoplay";s:0:"";s:6:"camera";s:0:"";s:6:"cookie";s:0:"";s:8:"docwrite";s:0:"";s:6:"domain";s:0:"";s:15:"encrypted-media";s:0:"";s:10:"fullscreen";s:0:"";s:11:"geolocation";s:0:"";s:9:"gyroscope";s:0:"";s:12:"magnetometer";s:0:"";s:10:"microphone";s:0:"";s:4:"midi";s:0:"";s:7:"payment";s:0:"";s:18:"picture-in-picture";s:0:"";s:7:"speaker";s:0:"";s:11:"sync-script";s:0:"";s:8:"sync-xhr";s:0:"";s:13:"unsized-media";s:0:"";s:3:"usb";s:0:"";s:15:"vertical-scroll";s:0:"";s:7:"vibrate";s:0:"";s:2:"vr";s:0:"";}', 'yes')
+ON DUPLICATE KEY UPDATE option_value = 'a:24:{s:13:"accelerometer";s:0:"";s:20:"ambient-light-sensor";s:0:"";s:8:"autoplay";s:0:"";s:6:"camera";s:0:"";s:6:"cookie";s:0:"";s:8:"docwrite";s:0:"";s:6:"domain";s:0:"";s:15:"encrypted-media";s:0:"";s:10:"fullscreen";s:0:"";s:11:"geolocation";s:0:"";s:9:"gyroscope";s:0:"";s:12:"magnetometer";s:0:"";s:10:"microphone";s:0:"";s:4:"midi";s:0:"";s:7:"payment";s:0:"";s:18:"picture-in-picture";s:0:"";s:7:"speaker";s:0:"";s:11:"sync-script";s:0:"";s:8:"sync-xhr";s:0:"";s:13:"unsized-media";s:0:"";s:3:"usb";s:0:"";s:15:"vertical-scroll";s:0:"";s:7:"vibrate";s:0:"";s:2:"vr";s:0:"";}', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_feature_policy_value', 'a:24:{s:13:"accelerometer";s:6:"''self''";s:20:"ambient-light-sensor";s:6:"''self''";s:8:"autoplay";s:6:"''self''";s:6:"camera";s:6:"''self''";s:6:"cookie";s:6:"''self''";s:8:"docwrite";s:6:"''self''";s:6:"domain";s:6:"''self''";s:15:"encrypted-media";s:6:"''self''";s:10:"fullscreen";s:6:"''self''";s:11:"geolocation";s:6:"''self''";s:9:"gyroscope";s:6:"''self''";s:12:"magnetometer";s:6:"''self''";s:10:"microphone";s:6:"''self''";s:4:"midi";s:6:"''self''";s:7:"payment";s:6:"''self''";s:18:"picture-in-picture";s:6:"''self''";s:7:"speaker";s:6:"''self''";s:11:"sync-script";s:6:"''self''";s:8:"sync-xhr";s:6:"''self''";s:13:"unsized-media";s:6:"''self''";s:3:"usb";s:6:"''self''";s:15:"vertical-scroll";s:6:"''self''";s:7:"vibrate";s:6:"''self''";s:2:"vr";s:6:"''self''";}', 'yes')
+ON DUPLICATE KEY UPDATE option_value = 'a:24:{s:13:"accelerometer";s:6:"''self''";s:20:"ambient-light-sensor";s:6:"''self''";s:8:"autoplay";s:6:"''self''";s:6:"camera";s:6:"''self''";s:6:"cookie";s:6:"''self''";s:8:"docwrite";s:6:"''self''";s:6:"domain";s:6:"''self''";s:15:"encrypted-media";s:6:"''self''";s:10:"fullscreen";s:6:"''self''";s:11:"geolocation";s:6:"''self''";s:9:"gyroscope";s:6:"''self''";s:12:"magnetometer";s:6:"''self''";s:10:"microphone";s:6:"''self''";s:4:"midi";s:6:"''self''";s:7:"payment";s:6:"''self''";s:18:"picture-in-picture";s:6:"''self''";s:7:"speaker";s:6:"''self''";s:11:"sync-script";s:6:"''self''";s:8:"sync-xhr";s:6:"''self''";s:13:"unsized-media";s:6:"''self''";s:3:"usb";s:6:"''self''";s:15:"vertical-scroll";s:6:"''self''";s:7:"vibrate";s:6:"''self''";s:2:"vr";s:6:"''self''";}', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_permissions_policy', '1', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '1', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_permissions_policy_feature', 'a:2:{s:13:"accelerometer";s:1:"1";s:8:"autoplay";s:1:"1";}', 'yes')
+ON DUPLICATE KEY UPDATE option_value = 'a:2:{s:13:"accelerometer";s:1:"1";s:8:"autoplay";s:1:"1";}', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_permissions_policy_origin', 'a:33:{s:13:"accelerometer";s:0:"";s:20:"ambient-light-sensor";s:0:"";s:8:"autoplay";s:0:"";s:7:"battery";s:0:"";s:6:"camera";s:0:"";s:21:"cross-origin-isolated";s:0:"";s:15:"display-capture";s:0:"";s:15:"document-domain";s:0:"";s:15:"encrypted-media";s:0:"";s:28:"execution-while-not-rendered";s:0:"";s:31:"execution-while-out-of-viewport";s:0:"";s:10:"fullscreen";s:0:"";s:11:"geolocation";s:0:"";s:9:"gyroscope";s:0:"";s:15:"interest-cohort";s:0:"";s:17:"layout-animations";s:0:"";s:20:"legacy-image-formats";s:0:"";s:12:"magnetometer";s:0:"";s:10:"microphone";s:0:"";s:4:"midi";s:0:"";s:19:"navigation-override";s:0:"";s:16:"oversized-images";s:0:"";s:7:"payment";s:0:"";s:18:"picture-in-picture";s:0:"";s:25:"publickey-credentials-get";s:0:"";s:16:"screen-wake-lock";s:0:"";s:11:"sync-script";s:0:"";s:8:"sync-xhr";s:0:"";s:3:"usb";s:0:"";s:15:"vertical-scroll";s:0:"";s:9:"web-share";s:0:"";s:9:"wake-lock";s:0:"";s:19:"xr-spatial-tracking";s:0:"";}', 'yes')
+ON DUPLICATE KEY UPDATE option_value = 'a:33:{s:13:"accelerometer";s:0:"";s:20:"ambient-light-sensor";s:0:"";s:8:"autoplay";s:0:"";s:7:"battery";s:0:"";s:6:"camera";s:0:"";s:21:"cross-origin-isolated";s:0:"";s:15:"display-capture";s:0:"";s:15:"document-domain";s:0:"";s:15:"encrypted-media";s:0:"";s:28:"execution-while-not-rendered";s:0:"";s:31:"execution-while-out-of-viewport";s:0:"";s:10:"fullscreen";s:0:"";s:11:"geolocation";s:0:"";s:9:"gyroscope";s:0:"";s:15:"interest-cohort";s:0:"";s:17:"layout-animations";s:0:"";s:20:"legacy-image-formats";s:0:"";s:12:"magnetometer";s:0:"";s:10:"microphone";s:0:"";s:4:"midi";s:0:"";s:19:"navigation-override";s:0:"";s:16:"oversized-images";s:0:"";s:7:"payment";s:0:"";s:18:"picture-in-picture";s:0:"";s:25:"publickey-credentials-get";s:0:"";s:16:"screen-wake-lock";s:0:"";s:11:"sync-script";s:0:"";s:8:"sync-xhr";s:0:"";s:3:"usb";s:0:"";s:15:"vertical-scroll";s:0:"";s:9:"web-share";s:0:"";s:9:"wake-lock";s:0:"";s:19:"xr-spatial-tracking";s:0:"";}', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_permissions_policy_value', 'a:33:{s:13:"accelerometer";s:4:"none";s:20:"ambient-light-sensor";s:4:"none";s:8:"autoplay";s:4:"none";s:7:"battery";s:4:"none";s:6:"camera";s:4:"none";s:21:"cross-origin-isolated";s:4:"none";s:15:"display-capture";s:4:"none";s:15:"document-domain";s:4:"none";s:15:"encrypted-media";s:4:"none";s:28:"execution-while-not-rendered";s:4:"none";s:31:"execution-while-out-of-viewport";s:4:"none";s:10:"fullscreen";s:4:"none";s:11:"geolocation";s:4:"none";s:9:"gyroscope";s:4:"none";s:15:"interest-cohort";s:4:"none";s:17:"layout-animations";s:4:"none";s:20:"legacy-image-formats";s:4:"none";s:12:"magnetometer";s:4:"none";s:10:"microphone";s:4:"none";s:4:"midi";s:4:"none";s:19:"navigation-override";s:4:"none";s:16:"oversized-images";s:4:"none";s:7:"payment";s:4:"none";s:18:"picture-in-picture";s:4:"none";s:25:"publickey-credentials-get";s:4:"none";s:16:"screen-wake-lock";s:4:"none";s:11:"sync-script";s:4:"none";s:8:"sync-xhr";s:4:"none";s:3:"usb";s:4:"none";s:15:"vertical-scroll";s:4:"none";s:9:"web-share";s:4:"none";s:9:"wake-lock";s:4:"none";s:19:"xr-spatial-tracking";s:4:"none";}', 'yes')
+ON DUPLICATE KEY UPDATE option_value = 'a:33:{s:13:"accelerometer";s:4:"none";s:20:"ambient-light-sensor";s:4:"none";s:8:"autoplay";s:4:"none";s:7:"battery";s:4:"none";s:6:"camera";s:4:"none";s:21:"cross-origin-isolated";s:4:"none";s:15:"display-capture";s:4:"none";s:15:"document-domain";s:4:"none";s:15:"encrypted-media";s:4:"none";s:28:"execution-while-not-rendered";s:4:"none";s:31:"execution-while-out-of-viewport";s:4:"none";s:10:"fullscreen";s:4:"none";s:11:"geolocation";s:4:"none";s:9:"gyroscope";s:4:"none";s:15:"interest-cohort";s:4:"none";s:17:"layout-animations";s:4:"none";s:20:"legacy-image-formats";s:4:"none";s:12:"magnetometer";s:4:"none";s:10:"microphone";s:4:"none";s:4:"midi";s:4:"none";s:19:"navigation-override";s:4:"none";s:16:"oversized-images";s:4:"none";s:7:"payment";s:4:"none";s:18:"picture-in-picture";s:4:"none";s:25:"publickey-credentials-get";s:4:"none";s:16:"screen-wake-lock";s:4:"none";s:11:"sync-script";s:4:"none";s:8:"sync-xhr";s:4:"none";s:3:"usb";s:4:"none";s:15:"vertical-scroll";s:4:"none";s:9:"web-share";s:4:"none";s:9:"wake-lock";s:4:"none";s:19:"xr-spatial-tracking";s:4:"none";}', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_clear_site_data', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_clear_site_data_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_content_type', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_content_type_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_content_nel', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_content_nel_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_x_robots_tag', '0', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '0', autoload = 'yes';
+
+INSERT INTO wp15_options (option_id, option_name, option_value, autoload)
+VALUES (NULL, 'hh_x_robots_tag_value', '', 'yes')
+ON DUPLICATE KEY UPDATE option_value = '', autoload = 'yes';
